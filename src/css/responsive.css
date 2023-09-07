@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body{
     background-color: hsl(235, 18%, 26%);
 }
 
-.card{
+.card {
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
@@ -22,52 +22,52 @@ body{
     width: 900px;
 }
 
-.info{
+.info {
     margin: auto 50px;
 }
 
-.info .title{
+.info .title {
     font-size: 52px;
     color: hsl(234, 29%, 20%);
     margin-bottom: 20px;
 }
 
-.info .description{
+.info .description {
     color: hsl(234, 29%, 20%);
     margin-bottom: 30px;
     font-size: 15px;
 }
 
-.info ul li{
+.info ul li {
     margin-bottom: 10px;
 }
 
-.info ul li:last-child{
+.info ul li:last-child {
     margin-bottom: 40px;
 }
 
-.info ul li{
+.info ul li {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.info ul li p{
+.info ul li p {
     color: hsl(234, 29%, 20%);
 }
 
-.info div{
+.info div {
     display: flex;
     flex-direction: column;
 }
 
-.info div p{
+.info div p {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.info div input{
+.info div input {
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 8px;
     padding: 20px;
@@ -75,23 +75,28 @@ body{
     margin-bottom: 20px;
 }
 
-.info div input::placeholder{
+.info div input::placeholder {
     color: hsl(231, 7%, 60%);
 }
 
-.info div input:focus{
+.info div input:focus {
     border: 1px solid hsl(234, 29%, 20%);
     outline: none;
 }
 
-.info div input:last-child{
+.info div input:last-child {
     border: none;
     margin-bottom: 0;
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
     cursor: pointer;
+    transition: 0.3s ease-in;
 }
 
-.card .illustration{
+.info div input:last-child:hover {
+    background: hsl(4, 100%, 67%);
+}
+
+.card .illustration {
     height: 580px;
 }
