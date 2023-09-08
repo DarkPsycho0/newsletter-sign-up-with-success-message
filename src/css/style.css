@@ -97,6 +97,6 @@ body {
     background: hsl(4, 100%, 67%);
 }
 
-.card .illustration {
-    height: 580px;
+.card .illustration-mobile{
+    display: none;
 }
