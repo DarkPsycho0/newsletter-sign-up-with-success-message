@@ -56,18 +56,32 @@ body {
     color: hsl(234, 29%, 20%);
 }
 
-.info div {
+.info .inputs {
     display: flex;
     flex-direction: column;
 }
 
-.info div p {
+.info .inputs .messages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .inputs .email-message,
+.info .inputs .error-message {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.info div input {
+.info .inputs .error-message{
+    color: hsl(4, 100%, 67%);
+}
+
+.none{
+    display: none;
+}
+
+.info .inputs input {
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 8px;
     padding: 20px;
@@ -75,16 +89,20 @@ body {
     margin-bottom: 20px;
 }
 
-.info div input::placeholder {
+.info .inputs .input-email::placeholder {
     color: hsl(231, 7%, 60%);
 }
 
-.info div input:focus {
+.info .inputs .input-email:focus {
     border: 1px solid hsl(234, 29%, 20%);
     outline: none;
 }
 
-.info div input:last-child {
+.info .inputs .input-submit:focus {
+    outline: none;
+}
+
+.info .inputs .input-submit {
     border: none;
     margin-bottom: 0;
     background-color: hsl(234, 29%, 20%);
@@ -93,10 +111,19 @@ body {
     transition: 0.3s ease-in;
 }
 
-.info div input:last-child:hover {
+.info .inputs .input-submit:last-child:hover {
     background: hsl(4, 100%, 67%);
 }
 
-.card .illustration-mobile{
+.card .illustration-mobile {
     display: none;
+}
+
+.info .inputs .input-email.error {
+    background-color: hsla(4, 100%, 67%, 25%);
+    border: 1px solid hsl(4, 100%, 67%);
+}
+
+.info .inputs .input-email.error::placeholder {
+    color: hsl(4, 100%, 67%);
 }
